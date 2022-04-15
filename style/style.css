@@ -243,6 +243,7 @@ body{
 
 #copyright > a{
     font-family:'Courier New', Courier, monospace;
+    color: black;
     transition: color 0.3s ease;
 }
 
