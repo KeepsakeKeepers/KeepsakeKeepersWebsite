@@ -10,16 +10,20 @@ input{
 h1{
     font-family: 'Austein';
     font-weight: normal;
-    font-size: 3.5em;
+    font-size: 3.5rem;
     position: relative;
-    margin: 20px 0;
+    margin: 0.5rem 0;
+}
+
+h4{
+    font-size: 1em;
 }
 
 .top-content{
     background-color: #704214;
     width: 90%;
-    margin: 0 auto 20px auto;
-    height: 60px;
+    margin: 0 auto 2rem auto;
+    height: min-content;
     display: flex;
     align-items: center;
     border-radius: 5px;
@@ -27,45 +31,42 @@ h1{
 }
 
 h3{
-    height: 100%;
+    height: min-content;
     background-color: #704214;
-    line-height: 60px;
-    padding: 0 50px;
+    padding: 0 2rem;
     color: black;
     border-right: 2px solid;
     border-color: black;
-    border-radius: 5px;
 }
 
 label{
     display: inline-block;
     font-family: sans-serif;
     height: 100%;
-    margin: 0 20px;
-    line-height: 60px;
-    font-size: 18px;
+    margin: 0 2rem;
+    padding: 2rem 0;
+    font-size: 1.3em;
     color: black;
     cursor: pointer;
     transition: color .5s;
 }
 
 label:hover{
-    /* color: rgb(31, 29, 29); */
     text-decoration: underline;
 }
 
 .photo-gallery{
-    width: 90%;
+    width: 90vw;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 10rem;
 }
 
 .pic{
     position: relative;
-    height: 250px;
+    height: 100%;
     border-radius: 15px;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.7);
     cursor: pointer;
@@ -82,9 +83,7 @@ label:hover{
     transition: opacity .5s ease;
     backface-visibility: hidden;
 }
-#fit-top{
-    object-position: top right;
-}
+
 .middle {
     opacity: 0;
     position: absolute;
@@ -168,4 +167,60 @@ label:hover{
     height: 30%;
     align-self: baseline;
     padding: 0.5em;
+}
+
+/* Tablets */
+
+@media(max-width: 900px){
+    h1{
+        font-size: 3rem;
+    }
+
+    .photo-gallery{
+        width: 70vw;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+    }
+
+    .pic{
+        height: 100%;
+    }
+
+    h3,label{
+        font-size: 1em;
+        margin: 0 0.5rem;
+        padding: 1rem 0.2rem;
+    }
+
+    .top-content{
+        width: 95%;
+    }
+}
+
+/*PHONE*/
+@media(max-width: 500px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .photo-gallery{
+        width: 60vw;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 5px;
+    }
+
+    .pic{
+        height: 100%;
+    }
+
+    h3,label{
+        font-size: 0.8em;
+        margin: 0 0.5rem; 
+        padding: 1rem 0.2rem;
+    }
+
+    .top-content{
+        width: 80%;
+    }
+
 }

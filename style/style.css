@@ -10,10 +10,7 @@
 }
 
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../resources/icons/back.jpg);
-    background-size: cover;
-    height: 100vh;
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), #704214;
     font-family: 'Austein';
 }
 
@@ -23,37 +20,32 @@ body{
 }
 
 .wrapper #logo{
-    margin: 5px;
-    color: #291806 ;
+    display: block;
     text-decoration: none;
     font-size: 5em;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
+    height: min-content;
+    width: fit-content;
 }
 
-#logo:hover{
-    color: #160d03;
+#logo:hover, .menu a:hover, #copyright > a:hover{
+    color: rgb(19, 16, 16);
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    padding: 0 1em;
-    width: 25vw;
 }
 
 .menu a{
+    font-family: sans-serif;
     text-decoration: none;
-    max-width: fit-content;
-    font-size: 2em;
-    margin: 1em;
-    color: #8c5319;
+    align-self: center;
+    width: fit-content;
+    font-size: 1.9em;
+    padding: 0 1em;
     transition: color 0.3s ease;
-}
-
-.menu a:hover{
-    color: #552c02;
 }
 
 .no-select{
@@ -76,26 +68,25 @@ body{
     align-self: center;
     background: #000116;
     position: relative;
-    width: 800px;
-    min-height: 500px;
+    width: 45%;
+    height: 100%;
     margin: 20px;
     overflow: hidden;
     border-radius: 10px;
 }
 
 .container span{
-    color: #1f1204;
     align-self: center;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: 1000;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container span #contain{
     width: max-content;
     height: max-content;
-    color: black;
+    color: #8a5119;
     text-decoration: underline;
-    font-weight: 1000;
+    font-size: 1em;
     border-radius:2px;
 }
 .slider .slide{
@@ -192,9 +183,26 @@ body{
     background: #4285F4;
 }
 
-@media(max-width: 900px){
+@media(max-width: 950px){
+    .wrapper #logo{
+        font-size: 3em;
+    }
+
+    .menu a{
+        font-size: 1.2em;
+        padding: 0 1em;
+    }
+
+    .container span{
+        font-size: 1.3em;
+        font-weight: 1000;
+    }
+    .container span #contain{
+        font-size: 0.9em;
+    }
+
     .slider{
-        width: 100%;
+        width: 90%;
     }
 
     .slider .slide .info{
@@ -205,7 +213,24 @@ body{
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 570px){
+
+    .wrapper #logo{
+        font-size: 3em;
+    }
+
+    .menu a{
+        font-size: 1em;
+        padding: 0 1rem;
+    }
+
+    .container span{
+        font-size: 1.3em;
+        font-weight: 1000;
+    }
+    .container span #contain{
+        font-size: 0.9em;
+    }
 
     .slider .slide .info h2{
         font-size: 1.8em;
@@ -225,7 +250,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #704214;
+    background-color: #643c15;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -233,9 +258,9 @@ body{
 
 #copyright{
     font-family:'Courier New', Courier, monospace;
-    font-weight: 600;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 600;
     display: block;
     color: black;
 }
@@ -244,8 +269,4 @@ body{
     font-family:'Courier New', Courier, monospace;
     color: black;
     transition: color 0.3s ease;
-}
-
-#copyright > a:hover{
-    color: rgb(51, 45, 45);
 }
