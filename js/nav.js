@@ -12,3 +12,8 @@ navToggle.addEventListener("click", ()=>{
         navToggle.setAttribute("aria-expanded", false);
     }
 });
+
+navToggle.addEventListener("mouseout", ()=>{
+    menu.setAttribute("data-visible", false);
+    navToggle.setAttribute("aria-expanded", false);
+});
