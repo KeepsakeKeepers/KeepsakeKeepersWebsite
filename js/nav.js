@@ -13,7 +13,7 @@ navToggle.addEventListener("click", ()=>{
     }
 });
 
-menu.addEventListener("mouseout", ()=>{
+navToggle.addEventListener("mouseout", ()=>{
     menu.setAttribute("data-visible", false);
     navToggle.setAttribute("aria-expanded", false);
 });
