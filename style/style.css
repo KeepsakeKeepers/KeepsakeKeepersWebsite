@@ -262,6 +262,9 @@ body{
     .navigation{
         height: 35vh;
     }
+    .navigation i{
+        font-size:1em;
+    }
     .container span{
         font-size: 1em;
         font-weight: 1000;
