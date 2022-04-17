@@ -161,13 +161,11 @@ body{
 }
 
 .navigation-visibility{
-/*     z-index: 999; */
     display: flex;
     justify-content: center;
 }
 
 .navigation-visibility .slide-icon{
-    z-index: 999;
     background: rgba(255, 255, 255, 0.5);
     width: 20px;
     height: 10px;
@@ -184,6 +182,7 @@ body{
 
 /* footer */
 .footer-container{
+    z-index:1000;
     box-shadow: 5px 0px 15px 0 rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
