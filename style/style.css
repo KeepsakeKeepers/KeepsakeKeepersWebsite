@@ -267,7 +267,10 @@ body{
         font-size: 1.8em;
         line-height: 40px;
     }
-
+    
+    .slider{
+        height: 80%;
+    }
     .slider .slide .info p{
         font-size: 0.9em;
     }
