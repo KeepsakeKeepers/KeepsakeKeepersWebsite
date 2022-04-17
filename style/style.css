@@ -309,8 +309,8 @@ body{
         border: 0;
         width: 2rem;
         aspect-ratio: 1;
-        top: 2rem;
-        right:2rem;
+        top: 1rem;
+        right: 1rem;
     }
      
     .mobile-nav-toggle[aria-expanded="true"]{
