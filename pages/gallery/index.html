@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="../../style/gallery.css">
-    <script src="../../js/carousel.js"></script>
+    <script src="../../js/nav.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -19,11 +19,12 @@
     <header>
         <nav>
             <div class="wrapper">
-                <a href="../../" id="logo" class="no-select">Keepsake Keepers</a>
-                <div class="menu">
-                    <a href="../../" class="no-select">Home</a>
-                    <a href="" class="no-select">Gallery</a>
-                    <a href="../aboutUs/" class="no-select">About us</a>
+                <a href="" id="logo" class="no-select">Keepsake Keepers</a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+                <div class="menu" data-visible="false" id="primary-navigation">
+                    <a href="index.html" class="no-select">Home</a>
+                    <a href="pages/gallery/" class="no-select">Gallery</a>
+                    <a href="pages/aboutUs/" class="no-select">About us</a> 
                 </div>
             </div>
         </nav>
@@ -35,7 +36,7 @@
 
         <div class="nft-container no-select">
             <h1>Gallery</h1>
-            <h4>*Not all NFTs are represented here. For more please visit our <a href="https://opensea.io/collection/keepsakekeepers" target="_blank">Opensea</a> site.</h4>
+            <h4>*Not all NFTs are listed here. For more, please visit our <a href="https://opensea.io/collection/keepsakekeepers" target="_blank">Opensea</a> site.</h4>
             <div class="top-content">
                 <h3>NFTs Gallery</h3>
                 <label for="check1">All NFTs</label>
