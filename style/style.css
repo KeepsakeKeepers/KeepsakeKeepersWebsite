@@ -161,7 +161,7 @@ body{
 }
 
 .navigation-visibility{
-    z-index: 999;
+/*     z-index: 999; */
     display: flex;
     justify-content: center;
 }
