@@ -260,7 +260,7 @@ body{
         transform: translateY(20%);
     }
     .navigation{
-        height: 40vh;
+        height: 35vh;
     }
     .navigation i{
         font-size:1em;
