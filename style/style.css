@@ -257,7 +257,7 @@ body{
 
     .container{
         height: 60vh;
-        transform: translateY(20%);
+        transform: translateY(15%);
     }
     .navigation{
         height: 35vh;
