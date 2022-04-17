@@ -70,7 +70,7 @@ body{
     background: #000116;
     position: relative;
     width: 45%;
-    height: 100%;
+    aspect-ratio: 16/9;
     margin: 20px;
     overflow: hidden;
     border-radius: 10px;
@@ -254,7 +254,6 @@ body{
         font-size: 1em;
         padding: 0 1rem;
     }
-
     .container span{
         font-size: 1em;
         font-weight: 1000;
@@ -267,10 +266,7 @@ body{
         font-size: 1.8em;
         line-height: 40px;
     }
-    
-    .slider{
-        height: 80%;
-    }
+
     .slider .slide .info p{
         font-size: 0.9em;
     }
@@ -312,8 +308,8 @@ body{
         border: 0;
         width: 2rem;
         aspect-ratio: 1;
-        top: 1rem;
-        right: 1rem;
+        top: 2rem;
+        right:2rem;
     }
      
     .mobile-nav-toggle[aria-expanded="true"]{
