@@ -297,7 +297,7 @@ body{
     .menu{
         position: fixed;
         inset: 0 0 0 50%;
-        background-color: hsl(0 0% 0% / 0.4);
+        background-color: hsl(0 0% 0% / 0.3);
         backdrop-filter: blur(1rem);
         flex-direction: column;
         justify-content: flex-start;
