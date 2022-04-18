@@ -298,6 +298,7 @@ body{
         position: fixed;
         inset: 0 0 0 50%;
         background-color: hsl(0 0% 0% / 0.3);
+        filter: sepia(1);
         backdrop-filter: blur(1rem);
         flex-direction: column;
         justify-content: flex-start;
